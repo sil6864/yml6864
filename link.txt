@@ -1,3 +1,4 @@
 https://gist.githubusercontent.com/sil6864/bd43e47a04da3337554ce03e2a464e14/raw/zhulinghuanyu
 https://gist.githubusercontent.com/sil6864/bd43e47a04da3337554ce03e2a464e14/raw/sunmiao4458
 https://gist.githubusercontent.com/sil6864/bd43e47a04da3337554ce03e2a464e14/raw/snakem982
+https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml
