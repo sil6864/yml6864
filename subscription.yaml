@@ -18,30 +18,7 @@ dns:
   - tls://8.8.8.8:853
   - tls://1.1.1.1:853
 proxies:
-- name: '[128] 🇺🇸 美国 01'
-  server: 144.34.175.116
-  port: 8443
-  type: vless
-  uuid: c3d4e5f6-a7b8-9012-cdef-123456789012
-  tls: false
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: '[127] 🇺🇸 美国 08'
-  server: 154.12.54.251
-  port: 443
-  type: vless
-  uuid: 8a33664e-a9e1-416d-b439-170a980fa0e2
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GrqUbFJU3CUsUlQGXlVAlukoqmeSC4-aEWss7us5aUk
-    short-id: 9ad49fce88be7adf
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-  servername: www.apple.com
-- name: '[146] 🇺🇸 美国 04'
+- name: '[194] 🇺🇸 美国 04'
   server: 45.78.7.160
   port: 443
   type: vless
@@ -55,7 +32,7 @@ proxies:
   network: tcp
   udp: true
   servername: www.cloudflare.com
-- name: '[148] 🇺🇸 美国 09'
+- name: '[201] 🇺🇸 美国 09'
   server: 199.7.140.201
   port: 443
   type: vless
@@ -67,7 +44,14 @@ proxies:
   network: tcp
   udp: true
   servername: www.cloudflare.com
-- name: '[156] 🇺🇸 美国 07'
+- name: '[245] 🇺🇸 美国 06'
+  server: 49.51.39.148
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: LCvps-199-168-136-193-bak8443
+  udp: true
+- name: '[259] 🇺🇸 美国 07'
   server: 23.83.241.21
   port: 443
   type: hysteria2
@@ -78,21 +62,36 @@ proxies:
   alpn:
   - h3
   udp: true
-- name: '[224] 🇺🇸 美国 06'
-  server: 49.51.39.148
+- name: '[568] 🇭🇰 香港 01'
+  server: 64.90.0.30
   port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LCvps-199-168-136-193-bak8443
+  type: hysteria2
+  password: Ya8s3KxQ9pLw2
+  auth: Ya8s3KxQ9pLw2
+  sni: hk-node
+  skip-cert-verify: true
   udp: true
-- name: '[434] 🇯🇵 日本 01'
+  down-speed: '100'
+  up-speed: '100'
+- name: '[665] 🇭🇰 香港 03'
+  server: 165.154.193.165
+  port: 443
+  type: hysteria2
+  password: qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt
+  auth: qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt
+  sni: 165.154.193.165
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: d7897b996af77eeecb7ac010361d74fb
+  udp: true
+- name: '[1922] 🇯🇵 日本 01'
   server: 154.36.158.197
   port: 8388
   type: ss
   cipher: aes-256-gcm
   password: BeaUf9c0AEWH40Pu
   udp: true
-- name: '[527] 🇭🇰 香港 02'
+- name: '[5627] 🇭🇰 香港 02'
   server: 189.24.79.229
   port: 443
   type: vless
@@ -106,30 +105,186 @@ proxies:
   network: tcp
   udp: true
   servername: www.microsoft.com
-- name: '[654] 🇭🇰 香港 03'
-  server: 165.154.193.165
+- name: '[286] 🇺🇸 美国 | USA 14'
+  server: 104.18.49.85
   port: 443
-  type: hysteria2
-  password: qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt
-  auth: qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt
-  sni: 165.154.193.165
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: d7897b996af77eeecb7ac010361d74fb
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
   udp: true
-- name: '[6246] 🇭🇰 香港 01'
-  server: 64.90.0.30
+  servername: ccc.010304.xyz
+- name: '[320] 🇺🇸 美国 | USA 2'
+  server: cf.090227.xyz
   port: 443
-  type: hysteria2
-  password: Ya8s3KxQ9pLw2
-  auth: Ya8s3KxQ9pLw2
-  sni: hk-node
-  skip-cert-verify: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
   udp: true
-  down-speed: '100'
-  up-speed: '100'
-- name: '[153] 🇺🇸 美国 | USA 9'
-  server: 8.6.112.86
+  servername: ccc.010304.xyz
+- name: '[419] 🇺🇸 美国 | USA 5'
+  server: 141.193.154.234
+  port: 443
+  type: vless
+  uuid: 80fdddb8-3eb8-41ad-9916-fbb42c442e6e
+  tls: true
+  reality-opts:
+    public-key: dN2EhTLZsQ1RsO4rCdoIBIi7mFtmqsC2iekPft3MPnY
+    short-id: '1835'
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+  servername: cloudflare.com
+- name: '[992] 🇺🇸 美国 | USA 11'
+  server: 104.16.65.1
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.cordweave.com
+  udp: true
+- name: '[1253] 🇺🇸 美国 | USA 3'
+  server: 104.18.189.153
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.cordweave.com
+  udp: true
+- name: '[2261] 🇺🇸 美国 | USA 8'
+  server: 104.19.43.102
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.cordweave.com
+  udp: true
+- name: '[2271] 🇺🇸 美国 | USA 15'
+  server: 104.17.145.43
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.cordweave.com
+  udp: true
+- name: '[2340] 🇺🇸 美国 | USA 9'
+  server: 104.16.244.188
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.cordweave.com
+  udp: true
+- name: '[2560] 🇭🇰 香港 | HKG'
+  server: euu1yalfmcqvljex.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: euu1yalfmcqvljex.v.3dns.vip
+  udp: true
+  servername: euu1yalfmcqvljex.v.3dns.vip
+- name: '[2625] 🇺🇸 美国 | USA'
+  server: 172.66.0.172
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.cordweave.com
+  udp: true
+- name: '[6079] 🇭🇰 香港 | HKG 4'
+  server: 47.76.57.83
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
+  udp: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
+- name: '[6601] 🇺🇸US美国丨yoyapai.com_20'
+  type: vless
+  server: a0688bt.us4.h1clayd.click
+  port: 443
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  tls: true
+  client-fingerprint: ios
+  reality-opts:
+    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
+    short-id: 257420d9d430152a
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  servername: a0688bt.us4.h1clayd.click
+- name: '[6607] 🇺🇸 美国 | USA 10'
+  server: 79.182.39.57
+  port: 443
+  type: vless
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  tls: true
+  reality-opts:
+    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
+    short-id: 257420d9d430152a
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+  servername: a0688bt.us4.h1clayd.click
+- name: '[206] 🇺🇸 美国 | USA'
+  server: 104.18.35.86
   port: 8080
   type: vless
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
@@ -141,8 +296,8 @@ proxies:
       Host: hhlfy.twiladaphne.ndjp.net
   udp: true
   servername: hhlfy.twiladaphne.ndjp.net
-- name: '[287] 🇺🇸 美国 | USA 3'
-  server: 104.19.90.35
+- name: '[235] 🇺🇸 美国 | USA 6'
+  server: 104.20.61.103
   port: 443
   type: vless
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -150,12 +305,117 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    path: /
     headers:
       Host: ccc.010304.xyz
   udp: true
   servername: ccc.010304.xyz
-- name: '[496] 🇭🇰 香港 | HKG 5'
+- name: '[536] 🇸🇬 新加坡 | SGP'
+  server: ct.877774.xyz
+  port: 443
+  type: vless
+  uuid: 4f735420-0179-45d7-ba4e-ed66d1bf3a89
+  tls: true
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement
+    headers:
+      Host: ap-south.862400.xyz
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2048
+  udp: true
+  servername: ap-south.862400.xyz
+- name: '[741] 🇰🇷 韩国 | KOR'
+  server: 3.36.61.213
+  port: 443
+  type: hysteria2
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  fingerprint: 89:61:86:FE:B2:0C:B7:40:31:87:A4:5F:F3:BD:5D:DC:8B:FB:DD:41:9D:77:9D:55:D7:86:18:9D:36:73:1A:69
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+  server-cert-fingerprint: 89:61:86:FE:B2:0C:B7:40:31:87:A4:5F:F3:BD:5D:DC:8B:FB:DD:41:9D:77:9D:55:D7:86:18:9D:36:73:1A:69
+- name: '[1021] 🇺🇸 美国 | USA 2'
+  server: 162.159.128.253
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.cordweave.com
+  udp: true
+- name: '[1219] 🇺🇸 美国 | USA 3'
+  server: 104.17.159.71
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.cordweave.com
+  udp: true
+- name: '[1601] 🇺🇸 美国 | USA 10'
+  server: 104.16.251.219
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.cordweave.com
+  udp: true
+- name: '[1618] 🇺🇸 美国 | USA 4'
+  server: 104.17.28.254
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.cordweave.com
+  udp: true
+- name: '[1644] 🇭🇰 香港 | HKG'
+  server: 95.182.95.144
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.cordweave.com
+  udp: true
+- name: '[1892] 🇺🇸 美国 | USA 12'
+  server: 104.26.3.162
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.cordweave.com
+  udp: true
+- name: '[2010] 🇭🇰 香港 | HKG 3'
   server: 47.244.120.197
   port: 23026
   type: vmess
@@ -170,179 +430,118 @@ proxies:
     headers:
       Host: 47.244.120.197
   udp: true
-- name: '[563] 🇺🇸 美国 | USA 8'
-  server: 104.16.223.61
+- name: '[2253] 🇺🇸 美国 | USA 7'
+  server: 104.17.17.238
   port: 443
   type: trojan
   password: humanity
-  sni: www.trusteeforward.com
+  sni: www.cordweave.com
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /assignment
     headers:
-      Host: www.trusteeforward.com
+      Host: www.cordweave.com
   udp: true
-- name: '[906] 🇺🇸 美国 | USA 2'
-  server: 104.21.0.87
+- name: '[2478] 🇺🇸 美国 | USA 11'
+  server: 104.16.144.215
   port: 443
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-  udp: true
-  servername: jp3.yohototo.top
-- name: '[1093] 🇺🇸 美国 | USA 7'
-  server: 202.50.253.81
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: '[2824] 🇺🇸US美国丨yoyapai.com_20'
-  type: vless
-  server: a0688bt.us4.h1clayd.click
-  port: 443
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  tls: true
-  client-fingerprint: ios
-  reality-opts:
-    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
-    short-id: 257420d9d430152a
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  servername: a0688bt.us4.h1clayd.click
-- name: '[5492] 🇭🇰 香港 | HKG 6'
-  server: 47.244.120.197
-  port: 44867
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /arki
-  udp: true
-- name: '[379] 🇭🇰 香港 | HKG 2'
-  server: 47.242.81.94
-  port: 52080
-  type: vmess
-  uuid: e47b9f77-60e4-4738-8d53-772b6002e146
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /QQqun-737805443
+    path: /assignment
     headers:
-      Host:
-      - openai.com
+      Host: www.cordweave.com
   udp: true
-- name: '[770] 🇭🇰 香港 | HKG 3'
-  server: rhhierkwrf6fhs2h.v.3dns.vip
+- name: IT - zhuhai.uk
+  type: http
+  server: 109.116.41.154
   port: 443
-  type: vmess
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
   tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: rhhierkwrf6fhs2h.v.3dns.vip
-  udp: true
-  servername: rhhierkwrf6fhs2h.v.3dns.vip
 - name: DE - zhuhai.uk
   type: http
-  server: 158.173.154.4
+  server: 149.36.50.157
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: AL - zhuhai.uk
+  type: http
+  server: 91.92.250.33
+  port: 443
+  tls: true
+  sni: 91.92.250.33
+  skip-cert-verify: true
+- name: AU - zhuhai.uk
+  type: http
+  server: 159.13.44.228
+  port: 443
+  username: 'null'
+  password: None
+  tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk
+  type: http
+  server: 193.176.84.24
   port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: NL - zhuhai.uk
+  type: http
+  server: 51.159.225.197
+  port: 19362
   username: 'null'
   password: 'null'
   tls: true
   skip-cert-verify: true
-- name: TW - zhuhai.uk
-  type: anytls
-  server: er8u54dh.df6h451rh.xin
-  port: 443
-  password: 0324fbc29561
-  udp: true
-  sni: px.ads.linkedin.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: HK - zhuhai.uk
-  type: vless
-  server: 104.20.30.240
-  port: 2083
-  uuid: a21b9103-1693-49c1-8dc9-e8e8098ee969
-  tls: true
-  servername: helloapps.cc.cd
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: helloapps.cc.cd
-- name: KZ - zhuhai.uk
-  type: vless
-  server: 95.56.251.12
-  port: 47443
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
-  flow: xtls-rprx-vision
-  tls: true
-  servername: kz1.waspnest.space
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: z1GSwCEACvO9RLcMVpcURiT8er4oeIdeSJhraw_0cGU
-    short-id: ae97223a8f799877
-- name: SE - zhuhai.uk
+- name: CY - zhuhai.uk
   type: http
-  server: 79.142.77.63
+  server: 213.207.130.34
   port: 443
   tls: true
   skip-cert-verify: true
-- name: CZ - zhuhai.uk
+- name: ID - zhuhai.uk
   type: http
-  server: 5.35.100.14
-  port: 8443
+  server: 103.86.117.202
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: IL - zhuhai.uk
+  type: http
+  server: 169.150.248.17
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: DE - zhuhai.uk 02
+  type: socks5
+  server: 202.4.119.226
+  port: 9090
+- name: JP - zhuhai.uk
+  type: http
+  server: fan.587475.xyz
+  port: 443
+  tls: true
+  sni: fan.587475.xyz
+  skip-cert-verify: true
+- name: IT - zhuhai.uk 02
+  type: http
+  server: 95.229.15.89
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: LV - zhuhai.uk
+  type: http
+  server: 185.219.159.15
+  port: 443
   tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk
-  type: http
-  server: 44.248.167.117
-  port: 8443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 02
-  type: vless
-  server: 79.182.39.57
-  port: 443
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  tls: true
-  servername: a0688bt.us4.h1clayd.click
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
-    short-id: 257420d9d430152a
-- name: US - zhuhai.uk 03
   type: http
   server: 138.199.35.213
   port: 9002
@@ -350,131 +549,67 @@ proxies:
   password: 'null'
   tls: true
   skip-cert-verify: true
-- name: TW - zhuhai.uk 02
-  type: vless
-  server: 59.125.69.22
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  tls: true
-  servername: tse1.mm.bing.net
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: tse1.mm.bing.net
-- name: IE - zhuhai.uk
+- name: US - zhuhai.uk 02
   type: http
-  server: 34.249.214.108
+  server: 138.199.35.212
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 03
+  type: http
+  server: 12.221.146.147
   port: 443
   tls: true
-  sni: 34.249.214.108
   skip-cert-verify: true
 - name: US - zhuhai.uk 04
   type: http
-  server: kimberlymilano.icu
-  port: 443
-  username: Ok5vbmU=
+  server: 24.142.229.178
+  port: 8090
   tls: true
+  skip-cert-verify: true
+- name: JP - zhuhai.uk 02
+  type: http
+  server: fan.571589.xyz
+  port: 443
+  username: bnVsbDpudWxs
+  tls: true
+  skip-cert-verify: true
 - name: US - zhuhai.uk 05
-  type: socks5
-  server: 104.168.249.36
-  port: 1080
-  username: test123
-  password: test123
-- name: TW - zhuhai.uk 03
-  type: vless
-  server: 2406:da18:1f2f:7a00:7565:b697:54ad:58f5
-  port: 11504
-  uuid: 68a93e46-d251-45a8-8148-cf3601451021
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.tue.nl
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5zKOk4VROiYbTsGb2n7RZXrJLb66td419zCzGb3di0A
-    short-id: 2382b33b76ed1b6e
-- name: NL - zhuhai.uk
   type: http
-  server: 84.17.47.125
-  port: 9002
-  tls: true
-  sni: 84.17.47.125
-  skip-cert-verify: true
-- name: SE - zhuhai.uk 02
-  type: socks5
-  server: 171.25.158.95
-  port: 1080
-- name: IT - zhuhai.uk
-  type: http
-  server: 93.42.177.250
-  port: 443
-  username: 'null'
-  password: None
+  server: 44.248.167.117
+  port: 8443
   tls: true
   skip-cert-verify: true
-- name: US - zhuhai.uk 06
+- name: NL - zhuhai.uk 02
   type: http
-  server: purecambogiasl.live
-  port: 443
-  username: Ok5vbmU=
-  tls: true
-- name: FR - zhuhai.uk
-  type: http
-  server: 149.102.245.65
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: ES - zhuhai.uk
-  type: http
-  server: 82.102.17.178
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: MY - zhuhai.uk
-  type: http
-  server: 152.233.3.14
-  port: 9443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 07
-  type: http
-  server: goedkoopgeluid.icu
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: DE - zhuhai.uk 02
-  type: vless
-  server: 5.181.158.195
-  port: 8463
-  uuid: 1c8f7130-8c1a-4949-831d-1d45b39c795b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: svoboda2.bystriynet.online
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: k2jSuvKPXyN0fCJiGpl1NMzzN7kzo64vsbbLD4gdKQ4
-    short-id: f017b721750fd683
-- name: ID - zhuhai.uk
-  type: http
-  server: 178.248.73.58
+  server: 89.150.35.94
   port: 443
   username: 'null'
   password: 'null'
   tls: true
   skip-cert-verify: true
-- name: JP - zhuhai.uk
+- name: DE - zhuhai.uk 03
   type: http
-  server: fan.571589.xyz
+  server: 213.109.163.119
   port: 443
   tls: true
-- name: JP - zhuhai.uk 02
+  skip-cert-verify: true
+- name: FR - zhuhai.uk
   type: http
-  server: fan.587475.xyz
+  server: fan.132031.xyz
   port: 443
   tls: true
-  sni: fan.587475.xyz
+  skip-cert-verify: true
+- name: HK - zhuhai.uk
+  type: socks5
+  server: 61.142.113.42
+  port: 6666
+- name: HK - zhuhai.uk 02
+  type: socks5
+  server: 218.77.50.79
+  port: 6666
 - name: KR - zhuhai.uk
   type: socks5
   server: 121.169.46.116
@@ -492,20 +627,26 @@ proxies:
   reality-opts:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
     short-id: 6ba85179e30d4fc2
-- name: JP - zhuhai.uk 01
-  type: vless
-  server: 45.202.255.92
-  port: 9443
-  uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+- name: NL - zhuhai.uk 03
+  type: trojan
+  server: 172.67.203.46
+  port: 443
+  password: humanity
   tls: true
-  servername: www.amazon.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
+  sni: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.cordweave.com
+- name: TW - zhuhai.uk
+  type: anytls
+  server: er8u54dh.df6h451rh.xin
+  port: 443
+  password: 0324fbc29561
+  udp: true
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
 - type: ss
   skip-cert-verify: false
   udp: true
@@ -985,55 +1126,68 @@ proxy-groups:
 - name: 🚀 自动选择
   type: url-test
   proxies: &id001
-  - '[128] 🇺🇸 美国 01'
-  - '[127] 🇺🇸 美国 08'
-  - '[146] 🇺🇸 美国 04'
-  - '[148] 🇺🇸 美国 09'
-  - '[156] 🇺🇸 美国 07'
-  - '[224] 🇺🇸 美国 06'
-  - '[434] 🇯🇵 日本 01'
-  - '[527] 🇭🇰 香港 02'
-  - '[654] 🇭🇰 香港 03'
-  - '[6246] 🇭🇰 香港 01'
-  - '[153] 🇺🇸 美国 | USA 9'
-  - '[287] 🇺🇸 美国 | USA 3'
-  - '[496] 🇭🇰 香港 | HKG 5'
-  - '[563] 🇺🇸 美国 | USA 8'
-  - '[906] 🇺🇸 美国 | USA 2'
-  - '[1093] 🇺🇸 美国 | USA 7'
-  - '[2824] 🇺🇸US美国丨yoyapai.com_20'
-  - '[5492] 🇭🇰 香港 | HKG 6'
-  - '[379] 🇭🇰 香港 | HKG 2'
-  - '[770] 🇭🇰 香港 | HKG 3'
+  - '[194] 🇺🇸 美国 04'
+  - '[201] 🇺🇸 美国 09'
+  - '[245] 🇺🇸 美国 06'
+  - '[259] 🇺🇸 美国 07'
+  - '[568] 🇭🇰 香港 01'
+  - '[665] 🇭🇰 香港 03'
+  - '[1922] 🇯🇵 日本 01'
+  - '[5627] 🇭🇰 香港 02'
+  - '[286] 🇺🇸 美国 | USA 14'
+  - '[320] 🇺🇸 美国 | USA 2'
+  - '[419] 🇺🇸 美国 | USA 5'
+  - '[992] 🇺🇸 美国 | USA 11'
+  - '[1253] 🇺🇸 美国 | USA 3'
+  - '[2261] 🇺🇸 美国 | USA 8'
+  - '[2271] 🇺🇸 美国 | USA 15'
+  - '[2340] 🇺🇸 美国 | USA 9'
+  - '[2560] 🇭🇰 香港 | HKG'
+  - '[2625] 🇺🇸 美国 | USA'
+  - '[6079] 🇭🇰 香港 | HKG 4'
+  - '[6601] 🇺🇸US美国丨yoyapai.com_20'
+  - '[6607] 🇺🇸 美国 | USA 10'
+  - '[206] 🇺🇸 美国 | USA'
+  - '[235] 🇺🇸 美国 | USA 6'
+  - '[536] 🇸🇬 新加坡 | SGP'
+  - '[741] 🇰🇷 韩国 | KOR'
+  - '[1021] 🇺🇸 美国 | USA 2'
+  - '[1219] 🇺🇸 美国 | USA 3'
+  - '[1601] 🇺🇸 美国 | USA 10'
+  - '[1618] 🇺🇸 美国 | USA 4'
+  - '[1644] 🇭🇰 香港 | HKG'
+  - '[1892] 🇺🇸 美国 | USA 12'
+  - '[2010] 🇭🇰 香港 | HKG 3'
+  - '[2253] 🇺🇸 美国 | USA 7'
+  - '[2478] 🇺🇸 美国 | USA 11'
+  - IT - zhuhai.uk
   - DE - zhuhai.uk
-  - TW - zhuhai.uk
-  - HK - zhuhai.uk
-  - KZ - zhuhai.uk
-  - SE - zhuhai.uk
-  - CZ - zhuhai.uk
+  - AL - zhuhai.uk
+  - AU - zhuhai.uk
+  - RO - zhuhai.uk
+  - NL - zhuhai.uk
+  - CY - zhuhai.uk
+  - ID - zhuhai.uk
+  - IL - zhuhai.uk
+  - DE - zhuhai.uk 02
+  - JP - zhuhai.uk
+  - IT - zhuhai.uk 02
+  - LV - zhuhai.uk
   - US - zhuhai.uk
   - US - zhuhai.uk 02
   - US - zhuhai.uk 03
-  - TW - zhuhai.uk 02
-  - IE - zhuhai.uk
   - US - zhuhai.uk 04
-  - US - zhuhai.uk 05
-  - TW - zhuhai.uk 03
-  - NL - zhuhai.uk
-  - SE - zhuhai.uk 02
-  - IT - zhuhai.uk
-  - US - zhuhai.uk 06
-  - FR - zhuhai.uk
-  - ES - zhuhai.uk
-  - MY - zhuhai.uk
-  - US - zhuhai.uk 07
-  - DE - zhuhai.uk 02
-  - ID - zhuhai.uk
-  - JP - zhuhai.uk
   - JP - zhuhai.uk 02
+  - US - zhuhai.uk 05
+  - NL - zhuhai.uk 02
+  - DE - zhuhai.uk 03
+  - FR - zhuhai.uk
+  - HK - zhuhai.uk
+  - HK - zhuhai.uk 02
   - KR - zhuhai.uk
   - SG - zhuhai.uk
-  - JP - zhuhai.uk 01
+  - NL - zhuhai.uk 03
+  - TW - zhuhai.uk
   - '[93] 🇺🇸US-173.244.56.9-0154'
   - '[106] 🇺🇸US-156.146.38.170-0125'
   - '[108] 🇺🇸US-156.146.38.167-0126'
@@ -1095,55 +1249,68 @@ proxy-groups:
   proxies:
   - 🚀 自动选择
   - 🔄 故障转移
-  - '[128] 🇺🇸 美国 01'
-  - '[127] 🇺🇸 美国 08'
-  - '[146] 🇺🇸 美国 04'
-  - '[148] 🇺🇸 美国 09'
-  - '[156] 🇺🇸 美国 07'
-  - '[224] 🇺🇸 美国 06'
-  - '[434] 🇯🇵 日本 01'
-  - '[527] 🇭🇰 香港 02'
-  - '[654] 🇭🇰 香港 03'
-  - '[6246] 🇭🇰 香港 01'
-  - '[153] 🇺🇸 美国 | USA 9'
-  - '[287] 🇺🇸 美国 | USA 3'
-  - '[496] 🇭🇰 香港 | HKG 5'
-  - '[563] 🇺🇸 美国 | USA 8'
-  - '[906] 🇺🇸 美国 | USA 2'
-  - '[1093] 🇺🇸 美国 | USA 7'
-  - '[2824] 🇺🇸US美国丨yoyapai.com_20'
-  - '[5492] 🇭🇰 香港 | HKG 6'
-  - '[379] 🇭🇰 香港 | HKG 2'
-  - '[770] 🇭🇰 香港 | HKG 3'
+  - '[194] 🇺🇸 美国 04'
+  - '[201] 🇺🇸 美国 09'
+  - '[245] 🇺🇸 美国 06'
+  - '[259] 🇺🇸 美国 07'
+  - '[568] 🇭🇰 香港 01'
+  - '[665] 🇭🇰 香港 03'
+  - '[1922] 🇯🇵 日本 01'
+  - '[5627] 🇭🇰 香港 02'
+  - '[286] 🇺🇸 美国 | USA 14'
+  - '[320] 🇺🇸 美国 | USA 2'
+  - '[419] 🇺🇸 美国 | USA 5'
+  - '[992] 🇺🇸 美国 | USA 11'
+  - '[1253] 🇺🇸 美国 | USA 3'
+  - '[2261] 🇺🇸 美国 | USA 8'
+  - '[2271] 🇺🇸 美国 | USA 15'
+  - '[2340] 🇺🇸 美国 | USA 9'
+  - '[2560] 🇭🇰 香港 | HKG'
+  - '[2625] 🇺🇸 美国 | USA'
+  - '[6079] 🇭🇰 香港 | HKG 4'
+  - '[6601] 🇺🇸US美国丨yoyapai.com_20'
+  - '[6607] 🇺🇸 美国 | USA 10'
+  - '[206] 🇺🇸 美国 | USA'
+  - '[235] 🇺🇸 美国 | USA 6'
+  - '[536] 🇸🇬 新加坡 | SGP'
+  - '[741] 🇰🇷 韩国 | KOR'
+  - '[1021] 🇺🇸 美国 | USA 2'
+  - '[1219] 🇺🇸 美国 | USA 3'
+  - '[1601] 🇺🇸 美国 | USA 10'
+  - '[1618] 🇺🇸 美国 | USA 4'
+  - '[1644] 🇭🇰 香港 | HKG'
+  - '[1892] 🇺🇸 美国 | USA 12'
+  - '[2010] 🇭🇰 香港 | HKG 3'
+  - '[2253] 🇺🇸 美国 | USA 7'
+  - '[2478] 🇺🇸 美国 | USA 11'
+  - IT - zhuhai.uk
   - DE - zhuhai.uk
-  - TW - zhuhai.uk
-  - HK - zhuhai.uk
-  - KZ - zhuhai.uk
-  - SE - zhuhai.uk
-  - CZ - zhuhai.uk
+  - AL - zhuhai.uk
+  - AU - zhuhai.uk
+  - RO - zhuhai.uk
+  - NL - zhuhai.uk
+  - CY - zhuhai.uk
+  - ID - zhuhai.uk
+  - IL - zhuhai.uk
+  - DE - zhuhai.uk 02
+  - JP - zhuhai.uk
+  - IT - zhuhai.uk 02
+  - LV - zhuhai.uk
   - US - zhuhai.uk
   - US - zhuhai.uk 02
   - US - zhuhai.uk 03
-  - TW - zhuhai.uk 02
-  - IE - zhuhai.uk
   - US - zhuhai.uk 04
-  - US - zhuhai.uk 05
-  - TW - zhuhai.uk 03
-  - NL - zhuhai.uk
-  - SE - zhuhai.uk 02
-  - IT - zhuhai.uk
-  - US - zhuhai.uk 06
-  - FR - zhuhai.uk
-  - ES - zhuhai.uk
-  - MY - zhuhai.uk
-  - US - zhuhai.uk 07
-  - DE - zhuhai.uk 02
-  - ID - zhuhai.uk
-  - JP - zhuhai.uk
   - JP - zhuhai.uk 02
+  - US - zhuhai.uk 05
+  - NL - zhuhai.uk 02
+  - DE - zhuhai.uk 03
+  - FR - zhuhai.uk
+  - HK - zhuhai.uk
+  - HK - zhuhai.uk 02
   - KR - zhuhai.uk
   - SG - zhuhai.uk
-  - JP - zhuhai.uk 01
+  - NL - zhuhai.uk 03
+  - TW - zhuhai.uk
   - '[93] 🇺🇸US-173.244.56.9-0154'
   - '[106] 🇺🇸US-156.146.38.170-0125'
   - '[108] 🇺🇸US-156.146.38.167-0126'
