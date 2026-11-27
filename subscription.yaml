@@ -18,7 +18,7 @@ dns:
   - tls://8.8.8.8:853
   - tls://1.1.1.1:853
 proxies:
-- name: '[6559] 🇺🇸 美国 12'
+- name: '[49] 🇺🇸 美国 12'
   server: 199.7.140.201
   port: 443
   type: vless
@@ -30,346 +30,239 @@ proxies:
   network: tcp
   udp: true
   servername: www.cloudflare.com
-- name: '[284] 🇺🇸 美国 | USA 9'
-  server: 156.229.167.109
+- name: '[75] 🇺🇸 美国 09'
+  server: 49.51.39.148
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: LCvps-199-168-136-193-bak8443
+  udp: true
+- name: '[400] 🇺🇸 美国 | USA'
+  server: 188.114.98.0
+  port: 443
+  type: vless
+  uuid: eee8ae65-bc48-438f-a606-a96f10bfb3b8
+  tls: true
+  alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  network: ws
+  ws-opts:
+    path: /t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+  udp: true
+  servername: x.m-90.xyz
+- name: '[804] 🇺🇸 美国 | USA 6'
+  server: nl.alpheratzz.org
   port: 8443
   type: vless
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
-  tls: true
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-  servername: github.githubassets.com
-- name: '[670] 🇺🇸 美国 | USA 3'
-  server: US032020.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 25e53ac3-1737-48c0-b92c-10d012af52f5
-  alterId: 0
-  cipher: auto
+  uuid: 0173d52e-8e1b-4681-831e-11529677b72f
   tls: true
   alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032020.ssgreen.org
-  udp: true
-  servername: US032020.ssgreen.org
-- name: '[839] 🇺🇸 美国 | USA'
-  server: JP032011.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: 4b9dc0c5-388d-45c5-9ad3-a91db984784e
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032011.ssgreen.org
-  udp: true
-  servername: JP032011.ssgreen.org
-- name: '[1459] 🇺🇸 美国 | USA 6'
-  server: US032021.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: bcb0310d-6a1a-49aa-b6d0-9bcb69805670
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032021.ssgreen.org
-  udp: true
-  servername: US032021.ssgreen.org
-- name: '[1682] 🇸🇬 新加坡 | SGP'
-  server: 213.183.45.23
-  port: 8444
-  type: vless
-  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
-  tls: true
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /ws
-  udp: true
-  servername: media.plumstatic.com
-- name: '[6193] 🇯🇵 日本 | JPN'
-  server: JP032010.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: f9a1ee44-21b3-4d0e-81b6-265fa2f3ba57
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032010.ssgreen.org
-  udp: true
-  servername: JP032010.ssgreen.org
-- name: '[338] 🇺🇸 美国 | USA 5'
-  server: 66.163.114.114
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  skip-cert-verify: true
-  udp: true
-  network: tcp
-- name: '[372] 🇺🇸 美国 | USA 7'
-  server: 66.163.114.106
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.findconnectwithemployersandbuildprofessionalnetwork.com
-  skip-cert-verify: true
-  udp: true
-  network: tcp
-- name: '[465] 🇺🇸 美国 | USA 4'
-  server: 3x-sub.linzhonghong.com
-  port: 443
-  type: trojan
-  password: c48qMRRfLJ3kwD4P_XpgfIq6
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /tjbbb7eab89c9a
-  udp: true
-  sni: 3x-sub.linzhonghong.com
-- name: '[504] 🇺🇸 美国 | USA 10'
-  server: US032023.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: b7b40f6a-c795-48fc-bafe-b632f6ce5888
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US032023.ssgreen.org
-  udp: true
-  servername: US032023.ssgreen.org
-- name: '[192] 🇺🇸 美国 | USA 11'
-  server: 66.163.114.166
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
-  skip-cert-verify: true
-  udp: true
-  network: tcp
-- name: '[1010] 🇸🇬 新加坡 | SGP 3'
-  server: dddz-1-x.473221.xyz
-  port: 43113
-  type: vless
-  uuid: 5807f1c4-b50e-4ec0-8d01-274045da0da5
-  tls: true
-  packet-encoding: xudp
+  - h2
   flow: xtls-rprx-vision
-  reality-opts:
-    public-key: EK3prcfF8VKm3CoTXWQguRj67LxGbkPIpKmEUKsMKGs
-    short-id: ff2c978a0b
-  client-fingerprint: edge
+  client-fingerprint: safari
   network: tcp
   udp: true
-  servername: v1-dy.ixigua.com
-- name: '[2175] 🇸🇬 新加坡 | SGP 2'
-  server: vl-x2.qz10086.top
-  port: 37998
-  type: vless
-  uuid: d235ad20-8f30-441e-871e-ee2695e4c430
-  tls: true
-  packet-encoding: xudp
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: j7lihAdLvNKWg67WMGQsRSM8WFbaUK5dAi7D2R7iXHM
-    short-id: d5a01375
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-  servername: www.apple.com
-- name: '[4016] 🇺🇸 美国 | USA 9'
-  server: 186.241.106.5
-  port: 443
-  type: trojan
-  password: qpbw_r_Ykr5EZTGKX3mNZSVTj9liEAL3
-  sni: 186.241.106.5
-  skip-cert-verify: true
-  udp: true
-  network: tcp
-- name: DE - zhuhai.uk
-  type: http
-  server: 130.17.13.234
-  port: 8443
-  tls: true
-  sni: 130.17.13.234
-  skip-cert-verify: true
-- name: VN - zhuhai.uk
-  type: socks5
-  server: 221.133.22.195
-  port: 62000
-  username: KUs4xRXd
-  password: 480w0Yy4
-- name: US - zhuhai.uk
-  type: http
-  server: 23.161.192.49
-  port: 9443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 02
-  type: http
-  server: 138.199.35.207
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: CA - zhuhai.uk
-  type: http
-  server: 198.44.142.27
-  port: 9443
-  tls: true
-  sni: 198.44.142.27
-  skip-cert-verify: true
-- name: US - zhuhai.uk 03
-  type: http
-  server: fan.596189.xyz
-  port: 443
-  username: bnVsbDpudWxs
-  tls: true
-  sni: fan.596189.xyz
-- name: TW - zhuhai.uk
-  type: anytls
-  server: rtifgjdr.df6h451rh.xin
-  port: 443
-  password: 2902c46c8493
-  udp: true
-  sni: rtifgjdr.df6h451rh.xin
-  skip-cert-verify: true
-- name: TH - zhuhai.uk
-  type: socks5
-  server: 82.47.152.113
-  port: 42000
-  username: userLjVB
-  password: Ks4Iab43
-- name: DE - zhuhai.uk 02
-  type: http
-  server: 87.106.223.158
-  port: 443
-  tls: true
-  sni: 87.106.223.158
-  skip-cert-verify: true
-- name: US - zhuhai.uk 04
-  type: http
-  server: 38.28.193.71
-  port: 443
-  tls: true
-  sni: 38.28.193.71
-  skip-cert-verify: true
-- name: HK - zhuhai.uk
-  type: anytls
-  server: 5641sdds.df6h451rh.xin
-  port: 443
-  password: 0324fbc29561
-  udp: true
-  skip-cert-verify: true
-- name: NL - zhuhai.uk
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
+  servername: api-v2-6b07048f.vmagnum.win
 - name: JP - zhuhai.uk
   type: http
   server: fan.587475.xyz
   port: 443
   tls: true
   sni: fan.587475.xyz
-  skip-cert-verify: true
-- name: BR - zhuhai.uk
-  type: socks5
-  server: 191.7.129.133
-  port: 62000
-  username: uwrgfkwg
-  password: 0mvrt5jb
-- name: MX - zhuhai.uk
-  type: vless
-  server: dddz-1-x.473221.xyz
-  port: 43116
-  uuid: 5807f1c4-b50e-4ec0-8d01-274045da0da5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: v1-dy.ixigua.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: rLU2xJNZPFvtHy49MygD-nta6OpJEbjarjAZ5vHwpVE
-    short-id: 29ad689280e2f0ec
-- name: TW - zhuhai.uk 02
+- name: US - zhuhai.uk
   type: http
-  server: 47.243.181.85
-  port: 42536
+  server: 138.199.35.205
+  port: 9002
   tls: true
   skip-cert-verify: true
-- name: KR - zhuhai.uk
+- name: DE - zhuhai.uk
+  type: http
+  server: 167.172.172.190
+  port: 443
+  username: testuser1
+  password: e4b72b531a2d10900519
+  tls: true
+  sni: 167.172.172.190
+  skip-cert-verify: true
+- name: US - zhuhai.uk 02
+  type: http
+  server: 138.199.35.214
+  port: 9002
+  username: 'null'
+  password: None
+  tls: true
+  sni: 138.199.35.214
+  skip-cert-verify: true
+- name: SE - zhuhai.uk
+  type: http
+  server: 149.50.216.65
+  port: 443
+  tls: true
+  sni: 149.50.216.65
+  skip-cert-verify: true
+- name: NL - zhuhai.uk
+  type: vless
+  server: 153.56.231.73
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  servername: 717252g.nl8.h1clayd.click
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+- name: US - zhuhai.uk 03
+  type: vless
+  server: 45.63.53.81
+  port: 443
+  uuid: c512dcbd-1847-40a2-9c99-989c8bfe4717
+  tls: true
+  servername: itunes.apple.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+  reality-opts:
+    public-key: 6nTROV2ELz-3vNUl0A00hp378QngpYABrPgjCpUknD0
+    short-id: f436f707
+- name: US - zhuhai.uk 04
+  type: vless
+  server: 162.35.101.177
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  servername: 0592efg.us8.h1clayd.click
+  skip-cert-verify: true
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 99f2107b03f8
+  reality-opts:
+    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
+    short-id: bd8f712209a9c283
+- name: TH - zhuhai.uk
   type: socks5
-  server: 121.169.46.116
-  port: 1090
+  server: 87.83.236.186
+  port: 62000
+  username: ks8783236c597
+  password: -D3s0GRfhYcd9Z4vaBy04ina
 - name: US - zhuhai.uk 05
   type: http
-  server: 138.199.35.195
+  server: 137.175.22.40
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 06
+  type: http
+  server: 137.175.22.116
+  port: 443
+  tls: true
+  sni: 137.175.22.116
+  skip-cert-verify: true
+- name: US - zhuhai.uk 07
+  type: http
+  server: 138.199.35.206
+  port: 9002
+  tls: true
+  sni: 138.199.35.206
+  skip-cert-verify: true
+- name: US - zhuhai.uk 08
+  type: http
+  server: 209.148.53.153
+  port: 8090
+  tls: true
+  skip-cert-verify: true
+- name: DE - zhuhai.uk 02
+  type: anytls
+  server: signal.frnhk.xyz
+  port: 443
+  password: 9f662cd7-13d4-4571-82a6-9d8b613dad7c
+  udp: true
+  sni: signal.frnhk.xyz
+- name: US - zhuhai.uk 09
+  type: http
+  server: fan.596189.xyz
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+- name: US - zhuhai.uk 10
+  type: http
+  server: 38.28.193.1
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 12
+  type: http
+  server: 107.151.238.27
+  port: 443
+  username: testuser1
+  password: e4b72b531a2d10900519
+  tls: true
+  skip-cert-verify: true
+- name: DE - zhuhai.uk 03
+  type: http
+  server: 193.233.75.115
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 193.233.75.115
+  skip-cert-verify: true
+- name: DE - zhuhai.uk 04
+  type: http
+  server: 158.173.154.5
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: NL - zhuhai.uk 02
+  type: vless
+  server: 13.141.36.10
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+- name: DE - zhuhai.uk 05
+  type: http
+  server: 158.173.154.2
   port: 9002
   username: 'null'
   password: 'null'
   tls: true
+  sni: 158.173.154.2
   skip-cert-verify: true
-- name: TH - zhuhai.uk 02
+- name: HK - zhuhai.uk
   type: socks5
-  server: 168.222.8.66
-  port: 42000
-  username: JPjarpW3
-  password: ao3W5ZML
-- name: US - zhuhai.uk 06
-  type: http
-  server: 66.135.172.202
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: IL - zhuhai.uk
-  type: http
-  server: 62.90.77.30
-  port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
+  server: 47.242.19.215
+  port: 8899
+  username: admin
+  password: admin
 - name: HK - zhuhai.uk 02
-  type: ss
-  server: e.node001.download
-  port: 33878
-  cipher: chacha20-ietf-poly1305
-  password: aqfNMqGyxRTHwXOy
+  type: http
+  server: 119.28.24.235
+  port: 3128
+  tls: true
+  skip-cert-verify: true
+- name: KR - zhuhai.uk
+  type: http
+  server: 152.69.230.221
+  port: 443
+  tls: true
+  skip-cert-verify: true
 - name: SG - zhuhai.uk
   type: socks5
   server: 66.80.2.252
@@ -523,6 +416,14 @@ proxies:
   port: 443
   name: '[282] 🇺🇸_美国 (31)'
   sni: learn.nextjobopportunityandclaimyouridealrole.com
+  network: tcp
+  udp: true
+- type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  server: 66.163.114.106
+  port: 443
+  name: '[286] 🇺🇸_美国 (52)'
+  sni: www.findconnectwithemployersandbuildprofessionalnetwork.com
   network: tcp
   udp: true
 - type: trojan
@@ -879,43 +780,34 @@ proxy-groups:
 - name: 🚀 自动选择
   type: url-test
   proxies: &id001
-  - '[6559] 🇺🇸 美国 12'
-  - '[284] 🇺🇸 美国 | USA 9'
-  - '[670] 🇺🇸 美国 | USA 3'
-  - '[839] 🇺🇸 美国 | USA'
-  - '[1459] 🇺🇸 美国 | USA 6'
-  - '[1682] 🇸🇬 新加坡 | SGP'
-  - '[6193] 🇯🇵 日本 | JPN'
-  - '[338] 🇺🇸 美国 | USA 5'
-  - '[372] 🇺🇸 美国 | USA 7'
-  - '[465] 🇺🇸 美国 | USA 4'
-  - '[504] 🇺🇸 美国 | USA 10'
-  - '[192] 🇺🇸 美国 | USA 11'
-  - '[1010] 🇸🇬 新加坡 | SGP 3'
-  - '[2175] 🇸🇬 新加坡 | SGP 2'
-  - '[4016] 🇺🇸 美国 | USA 9'
-  - DE - zhuhai.uk
-  - VN - zhuhai.uk
-  - US - zhuhai.uk
-  - US - zhuhai.uk 02
-  - CA - zhuhai.uk
-  - US - zhuhai.uk 03
-  - TW - zhuhai.uk
-  - TH - zhuhai.uk
-  - DE - zhuhai.uk 02
-  - US - zhuhai.uk 04
-  - HK - zhuhai.uk
-  - NL - zhuhai.uk
+  - '[49] 🇺🇸 美国 12'
+  - '[75] 🇺🇸 美国 09'
+  - '[400] 🇺🇸 美国 | USA'
+  - '[804] 🇺🇸 美国 | USA 6'
   - JP - zhuhai.uk
-  - BR - zhuhai.uk
-  - MX - zhuhai.uk
-  - TW - zhuhai.uk 02
-  - KR - zhuhai.uk
+  - US - zhuhai.uk
+  - DE - zhuhai.uk
+  - US - zhuhai.uk 02
+  - SE - zhuhai.uk
+  - NL - zhuhai.uk
+  - US - zhuhai.uk 03
+  - US - zhuhai.uk 04
+  - TH - zhuhai.uk
   - US - zhuhai.uk 05
-  - TH - zhuhai.uk 02
   - US - zhuhai.uk 06
-  - IL - zhuhai.uk
+  - US - zhuhai.uk 07
+  - US - zhuhai.uk 08
+  - DE - zhuhai.uk 02
+  - US - zhuhai.uk 09
+  - US - zhuhai.uk 10
+  - US - zhuhai.uk 12
+  - DE - zhuhai.uk 03
+  - DE - zhuhai.uk 04
+  - NL - zhuhai.uk 02
+  - DE - zhuhai.uk 05
+  - HK - zhuhai.uk
   - HK - zhuhai.uk 02
+  - KR - zhuhai.uk
   - SG - zhuhai.uk
   - SG - zhuhai.uk 02
   - RU - zhuhai.uk 01
@@ -933,6 +825,7 @@ proxy-groups:
   - '[261] 🇺🇸_美国 (22)'
   - '[276] 🇺🇸_美国 (28)'
   - '[282] 🇺🇸_美国 (31)'
+  - '[286] 🇺🇸_美国 (52)'
   - '[295] 🇺🇸_美国 (35)'
   - '[189] 🇺🇸US-95.215.201.18-0181'
   - '[319] 🇺🇸_美国 (32)'
@@ -980,43 +873,34 @@ proxy-groups:
   proxies:
   - 🚀 自动选择
   - 🔄 故障转移
-  - '[6559] 🇺🇸 美国 12'
-  - '[284] 🇺🇸 美国 | USA 9'
-  - '[670] 🇺🇸 美国 | USA 3'
-  - '[839] 🇺🇸 美国 | USA'
-  - '[1459] 🇺🇸 美国 | USA 6'
-  - '[1682] 🇸🇬 新加坡 | SGP'
-  - '[6193] 🇯🇵 日本 | JPN'
-  - '[338] 🇺🇸 美国 | USA 5'
-  - '[372] 🇺🇸 美国 | USA 7'
-  - '[465] 🇺🇸 美国 | USA 4'
-  - '[504] 🇺🇸 美国 | USA 10'
-  - '[192] 🇺🇸 美国 | USA 11'
-  - '[1010] 🇸🇬 新加坡 | SGP 3'
-  - '[2175] 🇸🇬 新加坡 | SGP 2'
-  - '[4016] 🇺🇸 美国 | USA 9'
-  - DE - zhuhai.uk
-  - VN - zhuhai.uk
-  - US - zhuhai.uk
-  - US - zhuhai.uk 02
-  - CA - zhuhai.uk
-  - US - zhuhai.uk 03
-  - TW - zhuhai.uk
-  - TH - zhuhai.uk
-  - DE - zhuhai.uk 02
-  - US - zhuhai.uk 04
-  - HK - zhuhai.uk
-  - NL - zhuhai.uk
+  - '[49] 🇺🇸 美国 12'
+  - '[75] 🇺🇸 美国 09'
+  - '[400] 🇺🇸 美国 | USA'
+  - '[804] 🇺🇸 美国 | USA 6'
   - JP - zhuhai.uk
-  - BR - zhuhai.uk
-  - MX - zhuhai.uk
-  - TW - zhuhai.uk 02
-  - KR - zhuhai.uk
+  - US - zhuhai.uk
+  - DE - zhuhai.uk
+  - US - zhuhai.uk 02
+  - SE - zhuhai.uk
+  - NL - zhuhai.uk
+  - US - zhuhai.uk 03
+  - US - zhuhai.uk 04
+  - TH - zhuhai.uk
   - US - zhuhai.uk 05
-  - TH - zhuhai.uk 02
   - US - zhuhai.uk 06
-  - IL - zhuhai.uk
+  - US - zhuhai.uk 07
+  - US - zhuhai.uk 08
+  - DE - zhuhai.uk 02
+  - US - zhuhai.uk 09
+  - US - zhuhai.uk 10
+  - US - zhuhai.uk 12
+  - DE - zhuhai.uk 03
+  - DE - zhuhai.uk 04
+  - NL - zhuhai.uk 02
+  - DE - zhuhai.uk 05
+  - HK - zhuhai.uk
   - HK - zhuhai.uk 02
+  - KR - zhuhai.uk
   - SG - zhuhai.uk
   - SG - zhuhai.uk 02
   - RU - zhuhai.uk 01
@@ -1034,6 +918,7 @@ proxy-groups:
   - '[261] 🇺🇸_美国 (22)'
   - '[276] 🇺🇸_美国 (28)'
   - '[282] 🇺🇸_美国 (31)'
+  - '[286] 🇺🇸_美国 (52)'
   - '[295] 🇺🇸_美国 (35)'
   - '[189] 🇺🇸US-95.215.201.18-0181'
   - '[319] 🇺🇸_美国 (32)'
